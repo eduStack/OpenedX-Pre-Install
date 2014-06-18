@@ -59,8 +59,7 @@ cd /var/tmp/configuration
 sudo pip install -r requirements.txt
 
 ##
-## Run the edx_sandbox.yml playbook in the configuration/playbooks directory
+## Run the eduStack.yml playbook in the configuration/playbooks directory
 ##
-cd /var/tmp/configuration/playbooks 
-sudo ansible-playbook -c local --limit "localhost:127.0.0.1" ../edx_sandbox.yml \
--i "localhost," -e 'EDXAPP_PREVIEW_LMS_BASE=preview.edustack.net  EDXAPP_LMS_BASE=www.edustack.net EDXAPP_CMS_BASE=studio.edustack.net EDXAPP_LMS_PREVIEW_NGINX_PORT=80 EDXAPP_CMS_NGINX_PORT=80 EDXAPP_LMS_NGINX_PORT=80 edx_platform_version=master '
+cd /var/tmp/configuration/playbooks/edx-east
+sudo ansible-playbook -c local --limit "localhost:127.0.0.1" ../eduStack.yml -i "localhost," -e 'EDXAPP_PREVIEW_LMS_BASE=preview.edustack.net  EDXAPP_LMS_BASE=www.edustack.net EDXAPP_CMS_BASE=studio.edustack.net EDXAPP_LMS_PREVIEW_NGINX_PORT=80 EDXAPP_CMS_NGINX_PORT=80 EDXAPP_LMS_NGINX_PORT=80 edx_platform_version=master '
