@@ -34,6 +34,7 @@ mkdir ~/.pip
 cat << EOF > ~/.pip/pip.conf
 [global]
 index-url = http://pypi.douban.com/simple
+timeout = 60
 EOF
 
 sudo cp ~/.pip/pip.conf /root/.pip/
