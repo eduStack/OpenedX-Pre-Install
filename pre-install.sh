@@ -20,9 +20,9 @@ fi
 ## Change ubuntu repo
 ##
 sudo cp  /etc/apt/sources.list  /etc/apt/sources.list.bak
-sudo sed -i 's/security.ubuntu.com/mirror.bit.edu.cn/g' /etc/apt/sources.list
-sudo sed -i 's/cn.archive.ubuntu.com/mirror.bit.edu.cn/g' /etc/apt/sources.list
-sudo sed -i 's/us.archive.ubuntu.com/mirror.bit.edu.cn/g' /etc/apt/sources.list
+sudo sed -i 's/security.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+sudo sed -i 's/cn.archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+sudo sed -i 's/us.archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 
 ##
 ## Set pypi index-url
