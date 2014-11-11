@@ -33,7 +33,7 @@ mkdir ~/.pip
 
 cat << EOF > ~/.pip/pip.conf
 [global]
-index-url = http://pypi.douban.com/simple
+index-url = http://pypi.mirrors.ustc.edu.cn/simple
 timeout = 60
 EOF
 
